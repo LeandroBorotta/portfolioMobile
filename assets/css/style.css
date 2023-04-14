@@ -120,7 +120,7 @@ strong{
 .sobre-area{
     display: grid; 
     grid-template-columns: 1fr 1fr;  
-    grid-template-rows: calc(100vh - 50px );
+    grid-template-rows: calc(100vh - 70px );
 }
 .sobre-content{
     display: flex;
@@ -131,6 +131,7 @@ strong{
 .sobre-content p{
     color: white;
     font-size: 23px;
+    text-align: justify;
 }
 .sobre .content{
     padding: 50px;
