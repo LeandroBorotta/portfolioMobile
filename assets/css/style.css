@@ -106,6 +106,50 @@ strong{
     color: #98E8CD;
 }
 
+
+/* sobre */
+.sobre{
+    min-height: 100vh;
+    background-color: black;
+}
+.sobre h2{
+    font-size: 50px;
+    color: #98E8CD;
+    margin-left: 10%;
+}
+.sobre-area{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;  
+    grid-template-rows: calc(100vh - 50px );
+}
+.sobre-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sobre-content p{
+    color: white;
+    font-size: 23px;
+}
+.sobre .content{
+    padding: 50px;
+}
+
+.sobre-imagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.sobre-imagem img{
+    max-width: 80%;
+}
+
+
+
+
 @media (min-width:300px) and (max-width:450px){
     header nav ul{
         display: flex;
@@ -133,5 +177,18 @@ strong{
         width: 40%;
         margin-top: 20px;
         margin-left: 8px;
+    }
+    .sobre-area{
+        display: grid; 
+        grid-template-columns: 1fr;  
+        grid-template-rows: calc(100vh - 50px );
+    }
+}
+
+@media (min-width: 451px) and (max-width:700px){
+    .sobre-area{
+        display: grid; 
+        grid-template-columns: 1fr;  
+        grid-template-rows: calc(100vh - 50px );
     }
 }
