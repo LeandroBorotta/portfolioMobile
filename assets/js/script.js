@@ -1,7 +1,13 @@
 //váriaveis Globais
 const titulo = document.querySelector('.apresentacao h1')
 const subtitulo = document.querySelector(".apresentacao h2")
+const menuLinks = document.querySelectorAll('header a')
 
+
+//Eventos
+menuLinks.forEach(link =>{
+    link.addEventListener('click', scrollToSection)
+})
 
 //Funções
 function typeWriter(elemento, callback){
@@ -44,3 +50,21 @@ let observer = new IntersectionObserver((entries)=>{
 animate.forEach((el)=>{
     observer.observe(el)
 })
+
+function getDistanceFromTheTop(element){
+    const id = element.getAttribute('href')
+    return document.querySelector(id).offsetTop
+}
+
+function nativeScroll(distance){
+    window.scroll({
+        top: distance,
+        behavior: 'smooth'
+    })
+}
+
+function scrollToSection(e){
+    e.preventDefault()
+    const distance = getDistanceFromTheTop(e.target) - 90
+    nativeScroll(distance)
+}
