@@ -145,8 +145,61 @@ strong{
     
 }
 .sobre-imagem img{
-    max-width: 80%;
+    max-width: 70%;
 }
+
+/* Portfólio */
+
+.habilidades{
+    min-height: 100vh;
+    background-color: black;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;  
+}
+.habilidades-tittle{
+    margin-top: 5%;
+    margin-left: 10%;
+    color: #98E8CD;
+}
+.habilidades-tittle h2{
+    font-size: 50px;
+}
+.habilidades-tittle h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.habilidades-barraProgresso{
+    background-color: black;
+}
+
+.area-progresso-content {
+    color: white;
+    font-size: 18px;
+    margin-top: 10%;
+}
+.area-progresso-content span{
+    color: #A6A6A6;
+}
+.progresso-bar{
+    background-color: white;
+    width: 80%;
+    border-radius: 15px;
+    height: 20px;
+    margin: 10px 0;
+}
+.width-progresso{
+    background-color: lightgreen;
+    border-radius: 15px;
+    height: inherit;
+}
+.width-green{
+    width: 85%;
+}
+.width-medium{
+    width: 75%;
+}
+
+
 
 
 
@@ -199,6 +252,42 @@ strong{
         margin-top: -100px;
     }
     
+    .habilidades-tittle{
+        margin-top: 10%;
+        margin-left: 10%;
+        color: #98E8CD;
+    }
+    .habilidades-tittle h2{
+        font-size: 40px;
+    }
+    .habilidades-tittle h3{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .habilidades{
+        min-height: 100vh;
+        background-color: black;
+        display: grid; 
+        grid-template-columns: 1fr;  
+    }
+    .area-progresso{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .progresso-bar{
+        background-color: white;
+        width: 100%;
+        border-radius: 15px;
+        height: 20px;
+        margin: 10px 0;
+    }
+    .area-progresso-content {
+        color: white;
+        font-size: 18px;
+        margin-top: 10%;
+        width: 80%;
+    }
 }
 
 @media (min-width: 451px) and (max-width:700px){
@@ -220,5 +309,43 @@ strong{
         justify-content: center;
         flex-direction: column;
         margin-top: -200px;
+    }
+
+
+    .habilidades-tittle{
+        margin-top: 10%;
+        margin-left: 10%;
+        color: #98E8CD;
+    }
+    .habilidades-tittle h2{
+        font-size: 50px;
+    }
+    .habilidades-tittle h3{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .habilidades{
+        min-height: 100vh;
+        background-color: black;
+        display: grid; 
+        grid-template-columns: 1fr;  
+    }
+    .area-progresso{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .progresso-bar{
+        background-color: white;
+        width: 100%;
+        border-radius: 15px;
+        height: 20px;
+        margin: 10px 0;
+    }
+    .area-progresso-content {
+        color: white;
+        font-size: 18px;
+        margin-top: 10%;
+        width: 80%;
     }
 }
