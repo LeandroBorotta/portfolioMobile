@@ -323,6 +323,46 @@ strong{
     margin: 20px 0;
 }
 
+/* Footer */
+
+footer{
+    min-height: 70vh;
+    background-color: black;
+}
+footer .titulo-contato h2{
+    color: #98E8CD;
+    margin-left: 5%;      
+    font-size: 60px;
+}
+.contato{
+    margin-top: 20px;
+}
+.contato1{
+    display: flex;
+    justify-content: space-around;
+}
+.tipo-contato{
+    display: flex;
+    flex-direction: column;
+}
+.tipo-contato .tipo{
+    font-size: 25px;
+    color: white;
+}
+.tipo-contato .tipo-resposta{
+    font-size: 25px;
+    color: #868686;
+}
+.contato2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+.contato2 span{
+    font-size: 25px;
+    color: white;
+}
+
 
 @media (min-width:300px) and (max-width:450px){
     header nav ul{
@@ -461,6 +501,30 @@ strong{
         color: white;
         margin-right: 10px;
     }
+
+
+    .tipo-contato{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .contato1,
+    .contato2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .tipo-contato .tipo{
+        font-size: 20px;
+        color: white;
+    }
+    .tipo-contato .tipo-resposta{
+        font-size: 20px;
+        color: #868686;
+    }
 }
 
 @media (min-width: 451px) and (max-width:700px){
@@ -561,5 +625,20 @@ strong{
     }
     .projetos-img img{
         max-width: 70%
+    }
+
+    .tipo-contato{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .contato1,
+    .contato2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 }
