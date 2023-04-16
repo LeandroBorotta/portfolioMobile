@@ -273,6 +273,55 @@ strong{
 }
 
 
+/* Me mande um email */
+.mandeEmail{
+    min-height: 100vh;
+    background-color: black;
+}
+.mandeEmail h2{
+    color: #98E8CD;
+    margin-left: 5%;
+    font-size: 60px;
+}
+.mandeEmail-area{
+    min-height: calc(100vh - 140px);
+    display: flex;
+    justify-content: center;
+}
+.mandeEmail form{
+    display: flex ;
+    flex-direction: column;
+    padding: 10px;
+}
+.mandeEmail input{
+    padding: 10px 15px;
+    width: 100%;
+}
+.mandeEmail .separador-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.mandeEmail input[type=submit]{
+    width: 50%;
+    background-color: #727272;
+    color: black;
+    font-size: 18px;
+}
+.mandeEmail label{
+    font-size: 30px;
+    color: white;
+    margin-right: 20px;
+}
+.mandeEmail textarea{
+    resize: none;
+}
+.mandeEmail .separador-input{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px 0;
+}
 
 
 @media (min-width:300px) and (max-width:450px){
@@ -400,6 +449,17 @@ strong{
     }
     .projetos-img img{
         max-width: 80%
+    }
+
+    .mandeEmail h2{
+        color: #98E8CD;
+        margin-left: 5%;
+        font-size: 50px;
+    }
+    .mandeEmail label{
+        font-size: 20px;
+        color: white;
+        margin-right: 10px;
     }
 }
 
