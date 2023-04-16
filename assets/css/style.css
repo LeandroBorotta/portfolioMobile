@@ -2,6 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+[data-anime]{
+    opacity: 0;
+    transition: 2s;
+}
+[data-anime="right"]{
+    transform: translate(100px);
+    overflow: hidden;
+}
+[data-anime="left"]{
+    transform: translate(-100px);
+    overflow: hidden;
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
 }
 body{
     background-color: black;
@@ -49,10 +67,13 @@ header nav ul li a:hover{
 .inicio .apresentacao h1{
     font-size: 58px;
     margin-bottom: 10px;
+    color: #98E8CD;
 }
 .inicio .apresentacao h2{
     font-size: 28px;
     margin-bottom: 10px;
+    color: #98E8CD;
+    display: none;
 }
 .inicio .apresentacao span{
     color: #A6A6A6;
@@ -80,6 +101,7 @@ header nav ul li a:hover{
     height: 50px;
     margin-right: 40px;
     border-radius: 50%;
+    overflow: hidden;
 }
 .apresentacao .logo-linkedin img{
     width: 50px;
@@ -641,5 +663,6 @@ footer .titulo-contato h2{
         justify-content: center;
         align-items: center;
         width: 100%;
+        padding: 20px 0;
     }
 }
