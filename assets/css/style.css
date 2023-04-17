@@ -339,6 +339,7 @@ strong{
 }
 .mandeEmail textarea{
     resize: none;
+    padding: 10px;
 }
 .mandeEmail .separador-input{
     display: flex;
