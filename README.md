@@ -36,10 +36,13 @@ Portfólio Mobile
 <hr />
 
 
-## Tecnologias utilizadas:
-- 👩‍💻 **HTML**
-- ⚛️ **CSS**
-- 👨‍💻 **Javascript**
+## Tecnologias utilizadas: 
+
+  <div style="display: inline-block"><br>
+  <img align="center" alt="Le-HTML" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="Le-CSS" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="LE-Js" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+</div>
 
 ## License
 
